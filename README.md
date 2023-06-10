@@ -7,7 +7,7 @@ the conditional can be represented in a single line.
 
 ```ruby
 
-# Code to be formatter
+# Code to be formatted
 
 x =
   if true
@@ -42,8 +42,11 @@ title =
   end
 ```
 
-Even the Ruby style guides that *do* allow modifier conditionals, such as the 
-[Airbnb Ruby Style Guide](https://github.com/airbnb/ruby#conditional-expressions) only do 
+Modifier conditionals are generally bad practice, and aren't allowed by many Ruby style
+guides, like the ones by Thoughtbot.
+[Their reasoning is given in this video.](https://thoughtbot.com/upcase/videos/thoughtbots-approach-to-ruby)
+Even the Ruby style guides that *do* allow modifier conditionals, such as the
+[Airbnb Ruby Style Guide](https://github.com/airbnb/ruby#conditional-expressions) only do
 so with the following condition:
 
 > Modifier if/unless usage is okay when the body is simple, the condition is simple, and
